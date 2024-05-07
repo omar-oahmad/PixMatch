@@ -133,7 +133,7 @@ def InitialPage():
     sc1.markdown(hlp_dtl, unsafe_allow_html=True)
     st.markdown(horizontal_bar, True)
 
-    author_dtl = "<strong>Happy Playing: 😎 Shawn Pereira: shawnpereira1969@gmail.com</strong>"
+    author_dtl = "<strong>Glory Glory Man United: 😎 Omar Ahmad: omar.ahmad2001@gmail.com</strong>"
     st.markdown(author_dtl, unsafe_allow_html=True)
 
 def ReadPictureFile(wch_fl):
@@ -331,7 +331,7 @@ def Main():
     InitialPage()
     with st.sidebar:
         mystate.GameDetails[0] = st.radio('Difficulty Level:', options=('Easy', 'Medium', 'Hard'), index=1, horizontal=True, )
-        mystate.GameDetails[3] = st.text_input("Player Name, Country", placeholder='Shawn Pereira, India', help='Optional input only for Leaderboard')
+        mystate.GameDetails[3] = st.text_input("Player Name, Country", placeholder='Omar Ahmad, Pakistan', help='Optional input only for Leaderboard')
 
         if st.button(f"🕹️ New Game", use_container_width=True):
 
